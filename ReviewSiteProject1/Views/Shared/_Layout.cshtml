@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+
+    <!-- <div class="header-text">
+        </diV>
+         <h1>Mini Tech</h1>-->
+    <div>
+        <div class="header-primary-container" style="background-color:#dcfeff; color:#333333; text-align: center; line-height: 44px;">
+            💖The Most Reliable Reviews! Everyday 💖
+        </div>
+
+    </div>
+
+    <div id="top" class="header-container header-regular">
+
+
+        <div class="header-container2">
+            <div class="header-container3">
+
+                <div class="header-top-container">
+
+
+                    <div class="header-top-container header-container container clearer" style="width:0px; height: 200px;">
+
+                        <div class="inner-container">
+                            <div class="mini">
+                                <h1 class="miniTech">Mini Tech</h1>
+                                <div class="searchBox" style="height: 80px; padding:0px 10px 10px 400px; margin:-100px 30px 30px 30px;">
+                                    <input id="search" type="text" name="q" value="" class="input-text" maxlength="128" autocomplete="off" placeholder="Search">
+                                </div>
+                            </div>
+
+                            <div class="header-primary-continer">
+                                <div class="header-primary-header continer">
+                                    <div class="inner-container">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="navbar navbar-inverse navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Mini Tech", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Reviews", "Index", "TechnologyReviews")</li>
+                    <li>@Html.ActionLink("Categories", "Index", "Categories")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+        @RenderBody()
+        <hr />
+        <footer>
+
+
+            <h6 class="block-title heading">Need Help?</h6>
+            <div class="block-content">
+
+                <ul class="bullet">
+                    <li>FAQ &amp; Contact Us</li>
+                    <li>Shipping &amp; Returns</li>
+                    <li>Order Tracking</li>
+                </ul>
+
+            </div>
+
+            <h6 class="block-title heading">About Us</h6>
+
+
+            <p>&copy; @DateTime.Now.Year - My Mini Tech</p>
+            </footer>
+
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)
+</body>
+</html>

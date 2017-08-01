@@ -1,0 +1,63 @@
+﻿@model ReviewSiteProject1.Models.TechnologyReview
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+          <div>
+            <h4>TechnologyReview</h4>
+            <hr />
+          </div>
+                <div class="col-md-8 detailsImage">
+
+                    <img class="img-responsive product " src="~/Content/images/anotherphone.jpg" alt="lemons1" height="350" width="400">
+                    <div class="container detailsContainer">
+                        <h4><b>Information</b></h4>
+                        <h3>
+                            @Html.DisplayNameFor(model => model.Category.Name)
+                        </h3>
+
+                        <p>
+                            @Html.DisplayFor(model => model.Category.Name)
+                        </p>
+
+                        <h3>
+                            @Html.DisplayNameFor(model => model.Product)
+                        </h3>
+
+                        <p>
+                            @Html.DisplayFor(model => model.Product)
+                        </p>
+
+                        <h3>
+                            @Html.DisplayNameFor(model => model.Description)
+                        </h3>
+
+                        <p>
+                            @Html.DisplayFor(model => model.Description)
+                        </p>
+
+                        <h3>
+                            @Html.DisplayNameFor(model => model.Price)
+                        </h3>
+
+                        <p>
+                            @Html.DisplayFor(model => model.Price)
+                        </p>
+
+                        <h3>
+                            @Html.DisplayNameFor(model => model.post)
+                        </h3>
+
+                        <p>
+                            @Html.DisplayFor(model => model.post)
+                        </p>
+
+                    </div>
+                </div>
+            
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>

@@ -1,0 +1,203 @@
+﻿body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #fff7f7;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.postDiv{
+
+   
+    width: 70.1774892%;
+    padding: 4.9480519%;
+    min-height:371px;
+ /*  float:right;*/
+    
+    margin-top: 0px;
+    margin-right: 3px;
+    margin-left: 200px;
+    margin-bottom: 0px;
+
+    text-align:center;
+    background-color:#ffffff;
+
+}
+
+
+.product{
+
+    float:right
+}
+
+.detailsImage{
+padding-right: 100px;
+
+}
+
+.detailsContainer{
+    padding:2px 16px;
+    background-color:white;
+}
+
+
+/*.header-text {
+    background-image: url('images/generatedtext.jpg');
+    background-repeat:no-repeat;
+    float:left;
+    background-size:;
+    
+    margin:0;
+    padding:0;
+    display:block;
+}*/
+
+.header-container {
+    background-image: url('images/mouse tech.jpg');
+    background-size: 500px 310px;
+    opacity: 0.5;
+    background-repeat:repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.header-primary-container{
+
+    background-color:rgba(124,52,220,0);
+    margin:0;
+    padding:0;
+
+}
+
+.container{
+
+    max-width: 1200px;
+    width:96%;
+    margin-left:auto;
+    margin-right:auto;
+
+
+    
+  /*  height: 100px;
+    background-color: yellow;*/
+
+
+
+}
+
+.header-primary {
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header {
+    color: #555555;
+    padding:0px;
+    margin:0px;
+}
+
+.inner-container{
+
+
+    padding-left:12px;
+    padding-right:12px;
+
+}
+
+
+
+.navbar-inverse {
+    background-color: #dddcdb;
+    border-color: #e9c7c8;
+}
+
+.navbar navbar-inverse navbar{
+
+     background-color: #dddcdb;
+    border-color: #e9c7c8;
+
+}
+
+.carousel-control {
+     height: 350px;
+     width:0%;
+     opacity: 1.9;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 70%;
+    height: 450px;
+    overflow: hidden;
+    margin-left: 160px;
+}
+
+.Information{
+    height:100%;
+   background-color: rgba(128, 0, 128, 0.03);
+    padding: 30px 0px 0px 0px;
+    margin: 60px 0px 0px 0px;
+}
+
+.circle {
+   
+    border-radius: 50%;
+    width:100px;
+    margin: 80px;
+}
+
+.cap{
+
+
+    text-align:center;
+}
+
+.miniTech{
+   
+
+    
+    padding: 20px 20px 40px -0px;
+    margin: 10px 22px 28px -600px;
+    font-family: cursive;
+    font-size: 70px;
+    color: rgb(35, 69, 199)
+
+
+
+
+
+
+
+
+}
+.mini{
+
+      position:center;
+}
+.seachBox{
+
+    padding: 0px 10px 10px 400px;
+    margin: -100px 30px 30px 30px
+
+
+}

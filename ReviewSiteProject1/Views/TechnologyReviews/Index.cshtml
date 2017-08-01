@@ -1,0 +1,77 @@
+﻿@model IEnumerable<ReviewSiteProject1.Models.TechnologyReview>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-3">
+            <h3>
+                @Html.DisplayNameFor(model => model.Category.Name)
+            </h3>
+        </div>
+
+        <div class="col-md-3">
+            <h3>
+                @Html.DisplayNameFor(model => model.Product)
+            </h3>
+        </div>
+
+        <div class="col-md-3">
+            <h3>
+                @Html.DisplayNameFor(model => model.Description)
+            </h3>
+        </div>
+
+        <div class="col-md-3">
+            <h3>
+                @Html.DisplayNameFor(model => model.Price)
+            </h3>
+        </div>
+        </div>
+    </div>
+
+           
+       
+
+        @foreach (var item in Model)
+        {
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+
+                        @Html.DisplayFor(modelItem => item.Category.Name)
+                    </div>
+                    <div class="col-md-3">
+                        @Html.DisplayFor(modelItem => item.Product)
+                    </div>
+                    <div class="col-md-3">
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </div>
+                    <div class="col-md-3">
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </div>
+                    </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12 postDiv">
+                                @Html.DisplayFor(modelItem => item.post)
+                            </div>
+                        </div>
+                    <div>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ReviewID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ReviewID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ReviewID })
+                    </div>
+                </div> 
+        }
+
